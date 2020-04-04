@@ -11,9 +11,8 @@ class T {
     public static int count = 2; //0
 
     //private int m = 8;
-
     private T() {
-        count ++;
+        count++;
         //System.out.println("--" + count);
     }
 }

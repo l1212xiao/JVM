@@ -11,6 +11,7 @@ public class T04_Disorder {
             x = 0; y = 0;
             a = 0; b = 0;
             Thread one = new Thread(new Runnable() {
+                @Override
                 public void run() {
                     //由于线程one先启动，下面这句话让它等一等线程two. 读着可根据自己电脑的实际性能适当调整等待时间.
                     //shortWait(100000);
@@ -20,6 +21,7 @@ public class T04_Disorder {
             });
 
             Thread other = new Thread(new Runnable() {
+                @Override
                 public void run() {
                     b = 1;
                     y = a;
